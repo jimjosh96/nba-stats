@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NBA 數據小站</title>
+  <meta name="description" content="用數據看 2024-25 NBA 球員與球隊，所有圖表都由 CSV 自動產生。">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page-id="home" data-root="">
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span>NBA 數據小站</a>
+      <nav class="site-nav" aria-label="主要分類">
+        <a href="index.html">首頁</a>
+        <a href="index.html#players">球員</a>
+        <a href="index.html#teams">球隊</a>
+        <a href="index.html#topics">主題分析</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>NBA 數據小站</h1>
+      <p>用數據看 2024-25 NBA 正規賽的球員與球隊。網站上的每一個數字、每一張圖，都由 CSV 數據檔自動產生，新增球員只要加一列數據。</p>
+      <div class="stats">
+        <div class="stat"><b data-stat-pages>-</b><span>分析頁面</span></div>
+        <div class="stat"><b data-stat-players>-</b><span>收錄球員</span></div>
+        <div class="stat"><b data-stat-teams>-</b><span>收錄球隊</span></div>
+      </div>
+    </section>
+
+    <section class="home-chart">
+      <h2>本站球員得分排行</h2>
+      <p>直接讀取 raw/players_2024-25.csv 產生。新增球員後，這張圖會自動更新。</p>
+      <figure class="bar-chart" data-source="players" data-metric="pts"></figure>
+    </section>
+
+    <div class="toolbar">
+      <input class="search" type="search" placeholder="搜尋球員、球隊、主題……例如：OKC、MVP、防守" aria-label="搜尋" data-search>
+      <div class="filters" role="group" aria-label="分類篩選">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">全部</button>
+        <button class="filter" type="button" data-filter="players" aria-pressed="false">球員</button>
+        <button class="filter" type="button" data-filter="teams" aria-pressed="false">球隊</button>
+        <button class="filter" type="button" data-filter="topics" aria-pressed="false">主題分析</button>
+      </div>
+    </div>
+
+    <div data-catalog><p class="empty">載入中……</p></div>
+
+    <section class="how">
+      <h2>這個網站怎麼運作</h2>
+      <p>數字和文字分開管理。AI 依照 <code>AGENTS.md</code> 的規則撰寫文字解讀，數據表和長條圖則由程式從 CSV 自動產生，所以網頁上不會出現手打錯的數字。</p>
+      <div class="flow">
+        <div class="flow-step"><b>raw/*.csv</b><span>數據，只能新增不能亂改</span></div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-step"><b>main.js</b><span>自動產生數據表與長條圖</span></div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-step"><b>wiki/*.html</b><span>AI 依範本撰寫的分析頁</span></div>
+      </div>
+      <p>每次修改後，AI 會執行 <code>tools/check.py</code> 檢查頁面格式、圖表設定與 CSV 是否一致，並在 <code>log.md</code> 留下紀錄。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    非官方的課堂作業網站｜數據：Basketball-Reference，2024-25 NBA 正規賽｜由 AI 依 AGENTS.md 規則維護｜最後更新：<time>2026-11-11</time>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

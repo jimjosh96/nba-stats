@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+  新增頁面範本（規則見 AGENTS.md 第 5、6、9 節）
+  1. 複製到 wiki/<分類>/<頁面id>.html，頁面 id 等於 CSV 的 id
+  2. 替換所有 PAGE-ID、中文名 English Name、一句話摘要、YYYY-MM-DD
+  3. 依分類換成正確的必備區塊（下面示範的是 players）：
+     players : overview 球員概況 → stats 本季數據（stat-table + bar-chart）→ analysis 數據解讀
+     teams   : overview 球隊概況 → stats 本季數據（stat-table data-source="teams" + bar-chart）→ analysis 數據解讀
+     topics  : question 分析問題 → chart 圖表（bar-chart）→ findings 發現 → method 計算方式
+  4. 數據表和圖表不要手打，用 stat-table、bar-chart 元件
+  5. related 與 sources 兩個區塊固定放在最後
+  6. 登記 data/pages.json、寫 log.md，最後執行 python tools/check.py
+-->
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中文名 English Name｜NBA 數據小站</title>
+  <meta name="description" content="一句話摘要（40 字以內，與 pages.json 相同）">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body data-page-id="PAGE-ID" data-root="../../">
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="../../index.html"><span class="logo-mark" aria-hidden="true"></span>NBA 數據小站</a>
+      <nav class="site-nav" aria-label="主要分類">
+        <a href="../../index.html">首頁</a>
+        <a href="../../index.html#players">球員</a>
+        <a href="../../index.html#teams">球隊</a>
+        <a href="../../index.html#topics">主題分析</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <nav class="breadcrumb"><a href="../../index.html">首頁</a> › <a href="../../index.html#players">球員</a> › 中文名 English Name</nav>
+
+    <article class="wiki-article">
+    <header class="article-head">
+      <span class="badge cat-players">球員</span>
+      <h1>中文名 English Name</h1>
+      <p class="summary">一句話摘要（40 字以內，與 pages.json 相同）</p>
+    </header>
+
+    <aside class="infobox">
+      <h2>基本資料</h2>
+      <dl>
+        <dt>球隊</dt><dd>隊名（縮寫）</dd>
+        <dt>位置</dt><dd>位置</dd>
+        <dt>年齡</dt><dd>N 歲</dd>
+        <dt>獎項</dt><dd>依 CSV awards 欄位</dd>
+      </dl>
+    </aside>
+
+    <section class="section" id="overview">
+      <h2>球員概況</h2>
+      <p>一段介紹：球隊、位置、出賽場數、獎項。數字必須和 CSV 相同。提到有頁面的對象加 <a class="wikilink" href="../teams/oklahoma-city-thunder.html">雷霆</a>；沒有頁面的用 <span class="redlink" title="尚未建立頁面">名稱</span>。</p>
+    </section>
+
+    <section class="section" id="stats">
+      <h2>本季數據</h2>
+      <div class="stat-table" data-source="players" data-id="PAGE-ID"></div>
+      <figure class="bar-chart" data-source="players" data-metric="pts" data-highlight="PAGE-ID"></figure>
+    </section>
+
+    <section class="section" id="analysis">
+      <h2>數據解讀</h2>
+      <ul>
+        <li><b>結論</b>：數字支持。</li>
+      </ul>
+    </section>
+
+    <section class="section" id="related">
+      <h2>相關頁面</h2>
+      <div class="related-list" data-related></div>
+    </section>
+
+    <section class="section sources" id="sources">
+      <h2>資料來源</h2>
+      <ul>
+        <li><code>raw/players_2024-25.csv</code>（來源見 raw/SOURCES.md）</li>
+      </ul>
+    </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    非官方的課堂作業網站｜數據：Basketball-Reference，2024-25 NBA 正規賽｜由 AI 依 AGENTS.md 規則維護｜最後更新：<time>YYYY-MM-DD</time>
+  </footer>
+  <script src="../../assets/main.js"></script>
+</body>
+</html>

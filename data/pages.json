@@ -1,0 +1,244 @@
+[
+  {
+    "id": "anthony-edwards",
+    "title": "愛德華茲 Anthony Edwards",
+    "category": "players",
+    "path": "wiki/players/anthony-edwards.html",
+    "summary": "本站最年輕、出賽最多的得分後衛，三分和罰球都排第 2。",
+    "tags": [
+      "MIN",
+      "得分後衛",
+      "MVP-7",
+      "三分"
+    ],
+    "related": [
+      "lebron-james",
+      "jayson-tatum"
+    ],
+    "sources": [
+      "players_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "giannis-antetokounmpo",
+    "title": "安戴托昆波 Giannis Antetokounmpo",
+    "category": "players",
+    "path": "wiki/players/giannis-antetokounmpo.html",
+    "summary": "投籃命中率與阻攻本站最高，但三分和罰球是明顯弱點。",
+    "tags": [
+      "MIL",
+      "大前鋒",
+      "MVP-3",
+      "命中率"
+    ],
+    "related": [
+      "nikola-jokic",
+      "mvp-race",
+      "shai-gilgeous-alexander"
+    ],
+    "sources": [
+      "players_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "jayson-tatum",
+    "title": "塔圖姆 Jayson Tatum",
+    "category": "players",
+    "path": "wiki/players/jayson-tatum.html",
+    "summary": "上場時間長、各項數據平均的前鋒，但投籃效率偏低。",
+    "tags": [
+      "BOS",
+      "大前鋒",
+      "MVP-4",
+      "全能"
+    ],
+    "related": [
+      "boston-celtics",
+      "anthony-edwards"
+    ],
+    "sources": [
+      "players_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "lebron-james",
+    "title": "詹姆斯 LeBron James",
+    "category": "players",
+    "path": "wiki/players/lebron-james.html",
+    "summary": "本站最年長的 40 歲球員，助攻仍排第 2，但失誤最多。",
+    "tags": [
+      "LAL",
+      "小前鋒",
+      "MVP-6",
+      "助攻"
+    ],
+    "related": [
+      "anthony-edwards",
+      "nikola-jokic"
+    ],
+    "sources": [
+      "players_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "nikola-jokic",
+    "title": "約基奇 Nikola Jokić",
+    "category": "players",
+    "path": "wiki/players/nikola-jokic.html",
+    "summary": "場均大三元的中鋒，籃板、助攻、抄截都是本站第一。",
+    "tags": [
+      "DEN",
+      "中鋒",
+      "MVP-2",
+      "大三元"
+    ],
+    "related": [
+      "shai-gilgeous-alexander",
+      "giannis-antetokounmpo",
+      "mvp-race"
+    ],
+    "sources": [
+      "players_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "shai-gilgeous-alexander",
+    "title": "亞歷山大 Shai Gilgeous-Alexander",
+    "category": "players",
+    "path": "wiki/players/shai-gilgeous-alexander.html",
+    "summary": "MVP 票選第 1 名，得分本站最高、失誤卻最少的控球後衛。",
+    "tags": [
+      "OKC",
+      "控球後衛",
+      "MVP-1",
+      "得分"
+    ],
+    "related": [
+      "oklahoma-city-thunder",
+      "mvp-race",
+      "nikola-jokic"
+    ],
+    "sources": [
+      "players_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "boston-celtics",
+    "title": "塞爾提克 Boston Celtics",
+    "category": "teams",
+    "path": "wiki/teams/boston-celtics.html",
+    "summary": "61 勝的東區第二，場均失分 107.2 是聯盟第二少。",
+    "tags": [
+      "BOS",
+      "東區",
+      "61 勝",
+      "防守"
+    ],
+    "related": [
+      "jayson-tatum",
+      "cleveland-cavaliers",
+      "point-differential"
+    ],
+    "sources": [
+      "teams_2024-25.csv",
+      "players_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "cleveland-cavaliers",
+    "title": "騎士 Cleveland Cavaliers",
+    "category": "teams",
+    "path": "wiki/teams/cleveland-cavaliers.html",
+    "summary": "東區第一的 64 勝球隊，場均得分 121.9 為聯盟最高。",
+    "tags": [
+      "CLE",
+      "東區",
+      "64 勝",
+      "進攻"
+    ],
+    "related": [
+      "boston-celtics",
+      "oklahoma-city-thunder",
+      "point-differential"
+    ],
+    "sources": [
+      "teams_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "oklahoma-city-thunder",
+    "title": "雷霆 Oklahoma City Thunder",
+    "category": "teams",
+    "path": "wiki/teams/oklahoma-city-thunder.html",
+    "summary": "68 勝聯盟最多，淨勝分與 SRS 也都是聯盟第一。",
+    "tags": [
+      "OKC",
+      "西區",
+      "68 勝",
+      "淨勝分"
+    ],
+    "related": [
+      "shai-gilgeous-alexander",
+      "point-differential",
+      "cleveland-cavaliers"
+    ],
+    "sources": [
+      "teams_2024-25.csv",
+      "players_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "mvp-race",
+    "title": "MVP 前三名數據比較",
+    "category": "topics",
+    "path": "wiki/topics/mvp-race.html",
+    "summary": "比較 MVP 票選前三名亞歷山大、約基奇、安戴托昆波的數據優勢。",
+    "tags": [
+      "MVP",
+      "比較",
+      "得分",
+      "大三元"
+    ],
+    "related": [
+      "shai-gilgeous-alexander",
+      "nikola-jokic",
+      "giannis-antetokounmpo"
+    ],
+    "sources": [
+      "players_2024-25.csv",
+      "teams_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "point-differential",
+    "title": "淨勝分與勝場",
+    "category": "topics",
+    "path": "wiki/topics/point-differential.html",
+    "summary": "淨勝分越高的球隊勝場越多嗎？用 30 隊的數據檢查。",
+    "tags": [
+      "淨勝分",
+      "SRS",
+      "防守",
+      "勝場"
+    ],
+    "related": [
+      "oklahoma-city-thunder",
+      "cleveland-cavaliers",
+      "boston-celtics"
+    ],
+    "sources": [
+      "teams_2024-25.csv"
+    ],
+    "updated": "2026-11-11"
+  }
+]

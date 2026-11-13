@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MVP 前三名數據比較｜NBA 數據小站</title>
+  <meta name="description" content="比較 MVP 票選前三名亞歷山大、約基奇、安戴托昆波的數據優勢。">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body data-page-id="mvp-race" data-root="../../">
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="../../index.html"><span class="logo-mark" aria-hidden="true"></span>NBA 數據小站</a>
+      <nav class="site-nav" aria-label="主要分類">
+        <a href="../../index.html">首頁</a>
+        <a href="../../index.html#players">球員</a>
+        <a href="../../index.html#teams">球隊</a>
+        <a href="../../index.html#topics">主題分析</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <nav class="breadcrumb"><a href="../../index.html">首頁</a> › <a href="../../index.html#topics">主題分析</a> › MVP 前三名數據比較</nav>
+
+    <article class="wiki-article">
+    <header class="article-head">
+      <span class="badge cat-topics">主題分析</span>
+      <h1>MVP 前三名數據比較</h1>
+      <p class="summary">比較 MVP 票選前三名亞歷山大、約基奇、安戴托昆波的數據優勢。</p>
+    </header>
+
+    <aside class="infobox">
+      <h2>基本資料</h2>
+      <dl>
+        <dt>比較對象</dt><dd>MVP 票選第 1～3 名</dd>
+        <dt>使用欄位</dt><dd>pts、trb、ast、fg_pct、w</dd>
+        <dt>球季</dt><dd>2024-25 正規賽</dd>
+      </dl>
+    </aside>
+
+    <section class="section" id="question">
+      <h2>分析問題</h2>
+      <p>2024-25 球季 MVP 票選前三名是<a class="wikilink" href="../players/shai-gilgeous-alexander.html">亞歷山大</a>、<a class="wikilink" href="../players/nikola-jokic.html">約基奇</a>和<a class="wikilink" href="../players/giannis-antetokounmpo.html">安戴托昆波</a>。這三個人在數據上各自強在哪裡？球隊戰績又有什麼差別？</p>
+    </section>
+
+    <section class="section" id="chart">
+      <h2>圖表</h2>
+      <figure class="bar-chart" data-source="players" data-metric="pts" data-highlight="shai-gilgeous-alexander,nikola-jokic,giannis-antetokounmpo"></figure>
+      <figure class="bar-chart" data-source="players" data-metric="ast" data-highlight="shai-gilgeous-alexander,nikola-jokic,giannis-antetokounmpo"></figure>
+      <figure class="bar-chart" data-source="players" data-metric="fg_pct" data-highlight="shai-gilgeous-alexander,nikola-jokic,giannis-antetokounmpo"></figure>
+      <figure class="bar-chart" data-source="teams" data-metric="w" data-highlight="oklahoma-city-thunder,denver-nuggets,milwaukee-bucks" data-limit="12"></figure>
+    </section>
+
+    <section class="section" id="findings">
+      <h2>發現</h2>
+      <ul>
+        <li><b>亞歷山大是得分手</b>：得分 32.7 最高、失誤 2.4 最少，三人中唯一場均得分超過 30 且失誤低於 3 的。</li>
+        <li><b>約基奇是全能型</b>：籃板 12.7、助攻 10.2 都是三人中最高，而且場均大三元。</li>
+        <li><b>安戴托昆波是效率型</b>：投籃命中率 60.1% 最高，但三分 22.2%、罰球 61.7% 都是三人中最低。</li>
+        <li><b>球隊戰績差距大</b>：<a class="wikilink" href="../teams/oklahoma-city-thunder.html">雷霆</a> 68 勝，比金塊（50 勝）多 18 勝、比公鹿（48 勝）多 20 勝。</li>
+      </ul>
+      <p class="callout">本頁只比較數據，不代表 MVP 的實際票選理由。</p>
+    </section>
+
+    <section class="section" id="method">
+      <h2>計算方式</h2>
+      <ul>
+        <li>球員數據直接使用 players_2024-25.csv 的 pts、trb、ast、tov、fg_pct、fg3_pct、ft_pct 欄位。</li>
+        <li>MVP 名次來自 awards 欄位（MVP-1 代表票選第 1 名）。</li>
+        <li>球隊勝場使用 teams_2024-25.csv 的 w 欄位。</li>
+      </ul>
+    </section>
+
+    <section class="section" id="related">
+      <h2>相關頁面</h2>
+      <div class="related-list" data-related></div>
+    </section>
+
+    <section class="section sources" id="sources">
+      <h2>資料來源</h2>
+      <ul>
+        <li><code>raw/players_2024-25.csv</code>（來源見 raw/SOURCES.md）</li>
+        <li><code>raw/teams_2024-25.csv</code>（來源見 raw/SOURCES.md）</li>
+      </ul>
+    </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    非官方的課堂作業網站｜數據：Basketball-Reference，2024-25 NBA 正規賽｜由 AI 依 AGENTS.md 規則維護｜最後更新：<time>2026-11-11</time>
+  </footer>
+  <script src="../../assets/main.js"></script>
+</body>
+</html>

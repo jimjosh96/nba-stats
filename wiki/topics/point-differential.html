@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>淨勝分與勝場｜NBA 數據小站</title>
+  <meta name="description" content="淨勝分越高的球隊勝場越多嗎？用 30 隊的數據檢查。">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body data-page-id="point-differential" data-root="../../">
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="../../index.html"><span class="logo-mark" aria-hidden="true"></span>NBA 數據小站</a>
+      <nav class="site-nav" aria-label="主要分類">
+        <a href="../../index.html">首頁</a>
+        <a href="../../index.html#players">球員</a>
+        <a href="../../index.html#teams">球隊</a>
+        <a href="../../index.html#topics">主題分析</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <nav class="breadcrumb"><a href="../../index.html">首頁</a> › <a href="../../index.html#topics">主題分析</a> › 淨勝分與勝場</nav>
+
+    <article class="wiki-article">
+    <header class="article-head">
+      <span class="badge cat-topics">主題分析</span>
+      <h1>淨勝分與勝場</h1>
+      <p class="summary">淨勝分越高的球隊勝場越多嗎？用 30 隊的數據檢查。</p>
+    </header>
+
+    <aside class="infobox">
+      <h2>基本資料</h2>
+      <dl>
+        <dt>比較對象</dt><dd>30 隊</dd>
+        <dt>使用欄位</dt><dd>w、l、pts、opp_pts、srs</dd>
+        <dt>計算指標</dt><dd>淨勝分、勝率</dd>
+      </dl>
+    </aside>
+
+    <section class="section" id="question">
+      <h2>分析問題</h2>
+      <p>一支球隊平均每場贏對手幾分（淨勝分），和它最後拿到幾勝有多大關係？得分多比較重要，還是失分少比較重要？</p>
+    </section>
+
+    <section class="section" id="chart">
+      <h2>圖表</h2>
+      <figure class="bar-chart" data-source="teams" data-metric="net" data-highlight="oklahoma-city-thunder,cleveland-cavaliers,boston-celtics"></figure>
+      <figure class="bar-chart" data-source="teams" data-metric="w" data-highlight="oklahoma-city-thunder,cleveland-cavaliers,boston-celtics" data-limit="10"></figure>
+      <figure class="bar-chart" data-source="teams" data-metric="opp_pts" data-highlight="orlando-magic,boston-celtics,oklahoma-city-thunder" data-limit="10" data-order="asc"></figure>
+    </section>
+
+    <section class="section" id="findings">
+      <h2>發現</h2>
+      <ul>
+        <li><b>前三名完全一致</b>：淨勝分前 3 名（<a class="wikilink" href="../teams/oklahoma-city-thunder.html">雷霆</a> +12.9、<a class="wikilink" href="../teams/cleveland-cavaliers.html">騎士</a> +9.5、<a class="wikilink" href="../teams/boston-celtics.html">塞爾提克</a> +9.1）正好也是勝場前 3 名。</li>
+        <li><b>得分多不一定贏</b>：灰熊場均得分 121.7 排聯盟第 2，但失分 116.9 也很多，最後 48 勝。</li>
+        <li><b>失分少也不一定贏</b>：魔術失分 105.5 聯盟最少，但得分 105.4 也排倒數第 3，淨勝分 -0.1，最後 41 勝 41 敗。</li>
+        <li><b>結論</b>：決定勝場的是得分和失分的「差」，而不是其中一項。</li>
+      </ul>
+    </section>
+
+    <section class="section" id="method">
+      <h2>計算方式</h2>
+      <ul>
+        <li>淨勝分（net）= 場均得分 pts − 場均失分 opp_pts，由 main.js 計算。</li>
+        <li>勝率（win_pct）= w ÷（w + l）。</li>
+        <li>SRS 直接使用 Basketball-Reference 提供的數值，它在淨勝分之外，還考慮了對手強弱。</li>
+      </ul>
+    </section>
+
+    <section class="section" id="related">
+      <h2>相關頁面</h2>
+      <div class="related-list" data-related></div>
+    </section>
+
+    <section class="section sources" id="sources">
+      <h2>資料來源</h2>
+      <ul>
+        <li><code>raw/teams_2024-25.csv</code>（來源見 raw/SOURCES.md）</li>
+      </ul>
+    </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    非官方的課堂作業網站｜數據：Basketball-Reference，2024-25 NBA 正規賽｜由 AI 依 AGENTS.md 規則維護｜最後更新：<time>2026-11-11</time>
+  </footer>
+  <script src="../../assets/main.js"></script>
+</body>
+</html>
