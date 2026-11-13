@@ -91,6 +91,9 @@ class PageParser(HTMLParser):
             self.summary += data
         elif self._in == "redlink":
             self.redlinks.append(data.strip())
+        # AGENTS.md 第 10 節：不要寫死收錄人數
+        if re.search(r"\d+\s*(位球員|人中)", data):
+            errors.append(f"[{self.body.get('data-page-id')}] 不要寫死收錄人數：「{data.strip()[:30]}」")
 
 
 def load_csv():

@@ -4,7 +4,7 @@
     "title": "愛德華茲 Anthony Edwards",
     "category": "players",
     "path": "wiki/players/anthony-edwards.html",
-    "summary": "本站最年輕、出賽最多的得分後衛，三分和罰球都排第 2。",
+    "summary": "本站最年輕、出賽最多的得分後衛，三分和罰球都排第 3。",
     "tags": [
       "MIN",
       "得分後衛",
@@ -13,12 +13,13 @@
     ],
     "related": [
       "lebron-james",
-      "jayson-tatum"
+      "jayson-tatum",
+      "stephen-curry"
     ],
     "sources": [
       "players_2024-25.csv"
     ],
-    "updated": "2026-11-11"
+    "updated": "2026-11-13"
   },
   {
     "id": "giannis-antetokounmpo",
@@ -40,7 +41,7 @@
     "sources": [
       "players_2024-25.csv"
     ],
-    "updated": "2026-11-11"
+    "updated": "2026-11-13"
   },
   {
     "id": "jayson-tatum",
@@ -61,7 +62,7 @@
     "sources": [
       "players_2024-25.csv"
     ],
-    "updated": "2026-11-11"
+    "updated": "2026-11-13"
   },
   {
     "id": "lebron-james",
@@ -77,12 +78,13 @@
     ],
     "related": [
       "anthony-edwards",
-      "nikola-jokic"
+      "nikola-jokic",
+      "stephen-curry"
     ],
     "sources": [
       "players_2024-25.csv"
     ],
-    "updated": "2026-11-11"
+    "updated": "2026-11-13"
   },
   {
     "id": "nikola-jokic",
@@ -104,7 +106,7 @@
     "sources": [
       "players_2024-25.csv"
     ],
-    "updated": "2026-11-11"
+    "updated": "2026-11-13"
   },
   {
     "id": "shai-gilgeous-alexander",
@@ -126,7 +128,29 @@
     "sources": [
       "players_2024-25.csv"
     ],
-    "updated": "2026-11-11"
+    "updated": "2026-11-13"
+  },
+  {
+    "id": "stephen-curry",
+    "title": "柯瑞 Stephen Curry",
+    "category": "players",
+    "path": "wiki/players/stephen-curry.html",
+    "summary": "罰球命中率 93.3% 本站最高，三分命中率排第 2 的控球後衛。",
+    "tags": [
+      "GSW",
+      "控球後衛",
+      "三分",
+      "罰球"
+    ],
+    "related": [
+      "anthony-edwards",
+      "lebron-james",
+      "shai-gilgeous-alexander"
+    ],
+    "sources": [
+      "players_2024-25.csv"
+    ],
+    "updated": "2026-11-13"
   },
   {
     "id": "boston-celtics",

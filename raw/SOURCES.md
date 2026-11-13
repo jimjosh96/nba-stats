@@ -21,4 +21,7 @@
 - 只能從來源複製數字，不可憑記憶填寫。
 
 ### 新增紀錄
-（目前無）
+- 2026-11-13｜players_2024-25.csv 新增 stephen-curry
+  - 場均數據：https://www.landofbasketball.com/nba_players_season_stats/2025/stephen_curry_full.htm ，並與 https://www.statscrew.com/basketball/stats/p-curryst01 交叉比對，兩者一致
+  - 獎項（年度第二隊）：https://www.hoopsrumors.com/2025/05/2024-25-all-nba-teams-announced.html
+  - MVP 票選名次：找不到可查證的來源，因此 awards 欄位不記錄
