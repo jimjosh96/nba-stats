@@ -2,7 +2,7 @@
 
 用數據看 2024-25 NBA 正規賽的球員與球隊。由 AI 依照 `AGENTS.md` 的規則維護，網頁上的數據表和長條圖都由程式從 CSV 自動產生。
 
-- 網站：https://你的帳號.github.io/nba-stats/
+- 網站：[https://jimjosh96.github.io/nba-stats/](https://jimjosh96.github.io/nba-stats/)
 - 規則：[AGENTS.md](AGENTS.md)（給 AI 看的專案說明書）
 - 數據來源：Basketball-Reference，詳見 [raw/SOURCES.md](raw/SOURCES.md)
 
